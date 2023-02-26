@@ -1,0 +1,38 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "GM local",
+      "request": "launch",
+      "type": "dart",
+      "args": [
+        "--dart-define=FLAVOR=local",
+        "--dart-define=VAR_1=localvariable_1"
+      ]
+    },
+    {
+      "name": "GM dev",
+      "request": "launch",
+      "type": "dart",
+      "args": [
+        "--dart-define=FLAVOR=dev",
+      ]
+    },
+    {
+      "name": "GM stag",
+      "request": "launch",
+      "type": "dart",
+      "args": [
+        "--dart-define=FLAVOR=stag"
+      ]
+    },
+    {
+      "name": "GM prod",
+      "request": "launch",
+      "type": "dart",
+      "args": [
+        "--dart-define=FLAVOR=prod"
+      ]
+    },
+  ]
+}
