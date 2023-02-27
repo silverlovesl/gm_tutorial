@@ -1,5 +1,8 @@
 # Setup
 
+# Documentation
+- [Desing Guideline](https://www.figma.com/file/MIi4Sxgr8gzMQ7Q8qJaZyg/DG-APP-Epic---WIP?node-id=3%3A1011&t=AYvQ5rhvoK348jQY-0)
+
 ## Installation
 ```bash
 # Download flutter installer
