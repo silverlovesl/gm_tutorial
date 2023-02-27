@@ -88,9 +88,6 @@ flutter:
     - family: PingFang-SC
       fonts:
         - asset: fonts/PingFang-SC-Regular.ttf
-        - asset: fonts/PingFang-SC-Light.ttf
-        - asset: fonts/PingFang-SC-Bold.ttf
-          weight: 600
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf
