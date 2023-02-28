@@ -3,11 +3,12 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
+import 'package:gm_tutorial/bindings/vehicle_binding.dart';
 import 'package:gm_tutorial/controllers/main_controller.dart';
 import 'package:gm_tutorial/pages/app_routes.dart';
 import 'package:gm_tutorial/pages/discover_page.dart';
 import 'package:gm_tutorial/pages/main_page.dart';
-import 'package:gm_tutorial/pages/profile_page.dart';
+import 'package:gm_tutorial/pages/myaccount_page.dart';
 import 'package:gm_tutorial/pages/register_page.dart';
 import 'package:gm_tutorial/pages/vehicle_page.dart';
 import 'package:gm_tutorial/repositories/rest_api_repository.dart';
@@ -35,6 +36,10 @@ class MyApp extends StatelessWidget {
       DeviceOrientation.portraitUp,
     ]);
 
+    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.light.copyWith(
+      statusBarColor: GMTheme.cBandWhite,
+    ));
+
     return FutureBuilder(
       builder: (context, AsyncSnapshot<String> snapshot) {
         return GetMaterialApp(
@@ -43,10 +48,10 @@ class MyApp extends StatelessWidget {
           initialRoute: AppRoutes.main,
           getPages: [
             // Every page should be lazy loaded
-            GetPage(name: AppRoutes.main, page: () => const MainPage()),
+            GetPage(name: AppRoutes.main, page: () => const MainPage(), bindings: [VehicleBindings()]),
             GetPage(name: AppRoutes.discover, page: () => const DiscoverPage()),
             GetPage(name: AppRoutes.vehicle, page: () => const VehiclePage()),
-            GetPage(name: AppRoutes.profile, page: () => const ProfilePage()),
+            GetPage(name: AppRoutes.my_account, page: () => const MyAccountPage()),
             GetPage(name: AppRoutes.register, page: () => const RegisterPage()),
           ],
           home: const MainPage(),

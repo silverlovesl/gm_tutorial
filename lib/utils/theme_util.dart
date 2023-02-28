@@ -50,4 +50,6 @@ class GMTheme {
       Color(0xff00131D),
     ],
   );
+
+  static final tsDiscoverLabel = TextStyle(fontSize: 16, color: GMTheme.cFillPrimary.withOpacity(0.6), fontWeight: FontWeight.w500);
 }

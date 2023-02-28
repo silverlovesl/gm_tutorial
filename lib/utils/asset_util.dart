@@ -6,4 +6,6 @@ class GMAsset {
   static const navHome = "images/nav-home.png";
   static const navCar = "images/nav-car.png";
   static const navUser = "images/nav-user.png";
+
+  static const scan = 'images/scan.png';
 }
