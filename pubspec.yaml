@@ -88,6 +88,9 @@ flutter:
     - family: PingFang-SC
       fonts:
         - asset: fonts/PingFang-SC-Regular.ttf
+    - family: NotoSans-SC
+      fonts:
+        - asset: fonts/NotoSans-SC-Regular.otf
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf
