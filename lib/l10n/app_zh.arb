@@ -1,0 +1,6 @@
+{
+    "@@locale": "zh",
+    "helloWorld": "你好，世界！",
+    "since": "来自{YEAR}年",
+    "newFriend":"新朋友"
+}

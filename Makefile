@@ -10,6 +10,8 @@ freeze-watch:
 	@echo "Watching freeze change, auto generate "
 	@flutter packages pub run build_runner watch --delete-conflicting-outputs
 
+i18n:
+	@echo "Generate language resource"
+	@flutter gen-l10n
 
-
-.PHONY: freeze
+.PHONY: freeze freeze-watch i18n;

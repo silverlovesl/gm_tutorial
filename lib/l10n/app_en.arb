@@ -1,0 +1,17 @@
+{
+    "helloWorld": "Hello World!",
+    "@helloWorld": {
+        "description": "The conventional newborn programmer greeting"
+    },
+    "since": "Since",
+    "@since": {
+        "description": "Since {YEAR}",
+        "placeholders": {
+            "YEAR": {
+                "example": "2020",
+                "description": "created year"
+            }
+        }
+    },
+    "newFriend":"New friend"
+}

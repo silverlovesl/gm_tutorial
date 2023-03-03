@@ -27,19 +27,22 @@ environment:
 # dependencies can be manually updated by changing the version numbers below to
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
-dependencies:
+dependencies:  
   flutter:
+    sdk: flutter
+  flutter_localizations:
     sdk: flutter
   freezed_annotation: ^2.2.0
   flutter_launcher_icons: ^0.12.0
   get: ^4.6.5
-  intl: ^0.18.0
   shared_preferences: ^2.0.18
+  flutter_local_notifications: ^12.0.0
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   json_annotation: ^4.8.0
+  intl: any
 
 dev_dependencies:
   flutter_test:
@@ -60,6 +63,7 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
+  generate: true
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
@@ -71,7 +75,6 @@ flutter:
     - images/
     - images/2.0x/
     - images/3.0x/
-    - mock/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

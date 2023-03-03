@@ -79,3 +79,10 @@ From vscode runner
 ```bash
 make freeze
 ```
+
+
+# Localization
+[How to internationalize Flutter apps](https://docs.flutter.dev/development/accessibility-and-localization/internationalization)
+```bash
+make i18n
+```
