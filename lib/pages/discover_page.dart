@@ -34,7 +34,10 @@ class DiscoverPage extends GetView<DiscoverController> {
           Text(i18n.since("2023"), style: GMTheme.tsDiscoverLabel),
           Text(i18n.newFriend, style: GMTheme.tsDiscoverLabel),
           ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                const locale = Locale("en", "US");
+                Get.updateLocale(locale);
+              },
               child: Text(
                 "Change Language",
                 style: GMTheme.tsDiscoverLabel,
